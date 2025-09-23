@@ -26,6 +26,12 @@ source: https://www.kernel.org/doc/html/v4.16/driver-api/miscellaneous.html#puls
 dtoverlay=pwm-2chan,pin=12,func=4
 ```
 
+### option: configure both 12 (hardware) and 18 (software)
+```
+dtoverlay=pwm-2chan,pin=12,func=4,pin2=18,func2=2
+```
+
+
 reboot after adding the overlay in the config.txt
 
 will see this show up ls /sys/class/pwm
@@ -66,6 +72,8 @@ rivieh@raspberrypi:/sys/class/pwm/pwmchip0/pwm0 $ ls
 capture  duty_cycle  enable  period  polarity  power  uevent
 
 ```
+
+### run the script to enable 50% duty cycle and shown the result from oscilloscope
 
 <img width="2380" height="1382" alt="Screenshot from 2025-09-23 15-10-18" src="https://github.com/user-attachments/assets/2670807a-197e-42e3-b358-9c16feeae67d" />
 
