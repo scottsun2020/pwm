@@ -67,6 +67,7 @@ capture  duty_cycle  enable  period  polarity  power  uevent
 
 ```
 
+<img width="2380" height="1382" alt="Screenshot from 2025-09-23 15-10-18" src="https://github.com/user-attachments/assets/2670807a-197e-42e3-b358-9c16feeae67d" />
 
 
 
