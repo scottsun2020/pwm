@@ -78,4 +78,13 @@ capture  duty_cycle  enable  period  polarity  power  uevent
 <img width="2380" height="1382" alt="Screenshot from 2025-09-23 15-10-18" src="https://github.com/user-attachments/assets/2670807a-197e-42e3-b358-9c16feeae67d" />
 
 
+### commands to control mannally
+rivieh@raspberrypi:~/pwm $ echo "0" > /sys/class/pwm/pwmchip0/pwm0/enable 
+rivieh@raspberrypi:~/pwm $ echo "1" > /sys/class/pwm/pwmchip0/pwm0/enable 
+rivieh@raspberrypi:~/pwm $ echo "250000" > /sys/class/pwm/pwmchip0/pwm0/duty_cycle 
+rivieh@raspberrypi:~/pwm $ echo "0" > /sys/class/pwm/pwmchip0/pwm0/enable 
+
+
+
+
 
