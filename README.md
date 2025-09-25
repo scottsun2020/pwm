@@ -84,7 +84,24 @@ rivieh@raspberrypi:~/pwm $ echo "1" > /sys/class/pwm/pwmchip0/pwm0/enable
 rivieh@raspberrypi:~/pwm $ echo "250000" > /sys/class/pwm/pwmchip0/pwm0/duty_cycle 
 rivieh@raspberrypi:~/pwm $ echo "0" > /sys/class/pwm/pwmchip0/pwm0/enable 
 
+### PWM Hardware Block Diagram
 
+```
+CPU Core
+    |
+    | (writes to registers once)
+    v
+Memory-Mapped Registers
+    |
+    | (hardware automatically reads)
+    v
+PWM Hardware Module
+    ├── Clock Source
+    ├── Counter Register
+    ├── Compare Register (duty cycle)
+    ├── Range Register (period)
+    └── GPIO Pin Controller
+```
 
 
 
