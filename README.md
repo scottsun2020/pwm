@@ -25,9 +25,6 @@ source: https://www.kernel.org/doc/html/v4.16/driver-api/miscellaneous.html#puls
 [all]
 dtoverlay=pwm-2chan,pin=12,func=4
 ```
-![IMG_8269](https://github.com/user-attachments/assets/7c869544-3a65-4199-970c-7a9066f39b44)
-
-![IMG_8268](https://github.com/user-attachments/assets/15585ef4-8b74-49d8-a090-6b59800afd91)
 
 
 ### option: configure both 12 (hardware) and 18 (software)
