@@ -84,3 +84,25 @@ minicom -D /dev/ttyUSB0 -b 115200
 ```
 ip addr
 ```
+
+```
+$ ssh root@10.50.4.108
+```
+
+### Step 4 Set up hostname 
+
+```
+root@maaxboard:/# echo "maaxboard" > /etc/hostname
+root@maaxboard:/# hostname maaxboard
+```
+
+```$ ssh root@maaxboard.local
+The authenticity of host 'maaxboard.local (10.50.4.134)' can't be established.
+ED25519 key fingerprint is SHA256:omfQa/jeu52AGMi4q5tuSSyddpU7tGNpjVMQ2zJEPI4.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:9: [hashed name]
+    ~/.ssh/known_hosts:11: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+```
+
+so next time, we can ssh at root@maaxboard.local without ip address.
